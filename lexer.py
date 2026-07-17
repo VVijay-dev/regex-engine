@@ -288,5 +288,3 @@ class Lexer:
             return Token(TokenType.CHAR,next_char,start_pos)
         
 
-lexer = Lexer(r"^\w+\@(?:gmail|yahoo)\.(com|in)\n")
-print(lexer.tokenize())
