@@ -228,9 +228,9 @@ class Lexer:
                 raise ValueError(
                     f"Unknown group modifier '?{next_char}' at position {start_pos}"
                 )
-        else:
-            self.advance()
-            return Token(TokenType.LPAREN,"(",start_pos)
+        
+            
+        return Token(TokenType.LPAREN,"(",start_pos)
         
                 
     
