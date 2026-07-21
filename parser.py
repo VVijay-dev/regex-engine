@@ -1,6 +1,7 @@
 from ats_nodes import *
-from typing import List, Set, Optional
-from lexer import Lexer, Token,TokenType
+from typing import List, Set
+from lexer import  Token,TokenType
+
 
 
 class Parser:
@@ -346,7 +347,4 @@ class Parser:
         
                
 
-lexer = Lexer(r"^[0-9]+\@(gmail|yahoo)")
-tokens = lexer.tokenize()
-parser = Parser(tokens=tokens)
-print(parser.parse())
+
